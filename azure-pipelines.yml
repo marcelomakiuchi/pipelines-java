@@ -15,9 +15,9 @@ steps:
   inputs: 
     targetType: 'inline'
     script: |
-    cd ~
-    echo "##vso[task.setvariable variable=HOME]$(pwd)"
-    echo "##vso[task.setvariable variable=JAVA_HOME_8_X64]/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64"
+      cd ~
+      echo "##vso[task.setvariable variable=HOME]$(pwd)"
+      echo "##vso[task.setvariable variable=JAVA_HOME_8_X64]/usr/lib/jvm/adoptopenjdk-8-hotspot-amd64"
 
 - task: Maven@3
   inputs:
